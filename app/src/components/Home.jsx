@@ -63,34 +63,42 @@ const Home = () => {
             href="https://www.linkedin.com/in/kamlesh-kumawat-691435255"
             target="_blank"
     
-            className="bg-[#ed3393] w-7 h-7  flex  items-center justify-center rounded "
+            className="w-8 h-8  flex  items-center justify-center rounded  bg-white/20 backdrop-blur-md
+             transition-all duration-300 ease-in-out
+             hover:scale-110 hover:bg-white/30 hover:shadow-[0_0_15px_#ed3393aa]"
           >
-            <FaLinkedinIn size={24} className="text-black" />
+            <FaLinkedinIn size={24} className="text-[#ed3393] drop-shadow-[0_0_5px_black]" />
           </a>
           <a
           
             href={isMobile ? "mailto:kamleshkumawat7740@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Kamlesh%2C%0AI%20just%20visited%20your%20portfolio..."
       : "https://mail.google.com/mail/?view=cm&fs=1&to=kamleshkumawat7740@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Kamlesh%2C%0AI%20just%20visited%20your%20portfolio..."}
            target="_blank"
-            className="bg-[#ed3393] w-7 h-7  flex  items-center justify-center rounded "
+            className=" w-8 h-8  flex  items-center justify-center rounded  bg-white/20 backdrop-blur-md
+             transition-all duration-300 ease-in-out
+             hover:scale-110 hover:bg-white/30 hover:shadow-[0_0_15px_#ed3393aa]"
           >
-            <Mail size={24} className="text-black" />
+            <Mail size={24} className="text-[#ed3393] drop-shadow-[0_0_5px_black]" />
           </a>
           <a
-            href="https://www.linkedin.com/in/kamlesh-kumawat-691435255"
+            href="https://github.com/kamleshkumawat094"
             target="_blank"
         
-            className="bg-[#ed3393] w-7 h-7   flex  items-center justify-center rounded "
+            className=" w-8 h-8   flex  items-center justify-center rounded  bg-white/20 backdrop-blur-md
+             transition-all duration-300 ease-in-out
+             hover:scale-110 hover:bg-white/30 hover:shadow-[0_0_15px_#ed3393aa]"
           >
-            <FaGithub size={24} className="text-black" />
+            <FaGithub size={24} className="text-[#ed3393] drop-shadow-[0_0_5px_black]" />
           </a>
           <a
             href="https://www.instagram.com/kamleshkumawat094?igsh=MWczNHN1MWJtOTJ5Yw=="
             target="_blank"
            
-            className="bg-[#ed3393] w-7 h-7   flex  items-center justify-center rounded "
+            className=" w-8 h-8   flex  items-center justify-center rounded  bg-white/20 backdrop-blur-md
+             transition-all duration-300 ease-in-out
+             hover:scale-110 hover:bg-white/30 hover:shadow-[0_0_15px_#ed3393aa]"
           >
-            <FaInstagram size={24} className="text-black" />
+            <FaInstagram size={24} className="text-[#ed3393] drop-shadow-[0_0_5px_black]" />
           </a>
           
         </div>
