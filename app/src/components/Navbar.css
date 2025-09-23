@@ -1,0 +1,49 @@
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+    
+  opacity: 0;
+  animation-name: slideInLeft;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+   animation-delay: 0.2s;
+}
+
+.duration-1 { animation-duration: 0.8s; animation-delay: 0s; }
+.duration-2 { animation-duration: 0.6s; animation-delay: 0.1s; }
+.duration-3 { animation-duration: 0.6s; animation-delay: 0.1s; }
+.duration-4 { animation-duration: 0.6s; animation-delay: 0.1s; }
+.duration-5 { animation-duration: 1s; animation-delay: 0.3s; }
+
+
+
+.center-underline {
+  position: relative;
+  
+  cursor: pointer;
+}
+
+.center-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #00AEFF;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.center-underline:hover::after {
+  width: 100%;
+  left: 0;
+}
