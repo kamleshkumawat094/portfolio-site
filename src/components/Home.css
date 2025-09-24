@@ -1,0 +1,139 @@
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+
+  opacity: 0;
+  animation-name: slideInLeft;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.duration-1 {
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(+100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-Top {
+  
+  opacity: 0;
+  animation-name: slideInTop;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+/* .duration-1 { animation-duration: 0.8s; animation-delay: 0s; }
+.duration-2 { animation-duration: 1s; animation-delay: 0s; }
+.duration-3 { animation-duration: 0.8s; animation-delay: 0.3s; }
+.duration-4 { animation-duration: 1s; animation-delay: 0.5s; }
+.duration-5 { animation-duration: 1s; animation-delay: 0.7s; } */
+
+.duration-1 {
+  animation-duration: 0.6s;
+  animation-delay: 0.3s;
+}
+.duration-2 {
+  animation-duration: 0.6s;
+  animation-delay: 0.6s;
+}
+.duration-3 {
+  animation-duration: 0.6s;
+  animation-delay: 0.9s;
+}
+.duration-4 {
+  animation-duration: 0.6s;
+  animation-delay: 1.2s;
+}
+.duration-5 {
+  animation-duration: 0.6s;
+  animation-delay: 1.5s;
+}
+.duratioon-6 {
+  animation-duration: 0.9s;
+  animation-delay: 1.9s;
+}
+
+.acc {
+  transition: all 0.9 ease;
+}
+.acc:hover {
+  border: 1px solid black;
+}
+
+/* .brdr {
+  transition: background-color 0.3s ease;
+}
+
+.brdr:hover {
+  background-color: #008fd1;
+} */
+
+
+@keyframes rotateScale {
+  0% {
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(0);
+    opacity: 1;
+  
+  }
+  75%{
+      transform: scale(1.1);
+  }
+}
+
+.kamal {
+  animation: rotateScale 2s ease-out forwards;
+}
+
+@media (max-width: 307px) {
+  .hKiSize {
+    font-size: 1.1rem; 
+  }
+}
+@media (max-width: 280px) {
+  .hKiSize {
+    font-size: 1rem; 
+  }
+}
+
+
+@media (max-width: 375px) {
+  .fontKiSize{
+    font-size: 2rem; 
+  }
+}
+
+
+@media (max-width: 342px) {
+  .fontKiSize{
+    font-size: 1.56rem; 
+  }
+}
+
+
+@media (max-width: 280px) {
+  .fontKiSize{
+    font-size: 1.4rem; 
+  }
+}
