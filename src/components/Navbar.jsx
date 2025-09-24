@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Home, Menu, X } from "lucide-react";
 import { motion, setStyle, styleEffect } from "framer-motion";
@@ -6,47 +6,6 @@ import { motion, setStyle, styleEffect } from "framer-motion";
 const Navbar = ({ onProjectsClick }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("home");
-useEffect(() => {
-  const handleScroll = () => {
-    const sections = ["home", "about", "skills", "projects", "Contact"];
-    const threshold = 0.6; // 60% visibility
-    let currentSection = active;
-
-    for (let i = 0; i < sections.length; i++) {
-      const section = document.getElementById(sections[i]);
-      if (section) {
-        const rect = section.getBoundingClientRect();
-        const sectionHeight = rect.height;
-
-        // Calculate visible height within viewport
-        const visibleHeight = Math.min(window.innerHeight, rect.bottom) - Math.max(0, rect.top);
-
-        // Calculate visibility ratio
-        const visibilityRatio = visibleHeight / sectionHeight;
-
-        if (visibilityRatio >= threshold) {
-          currentSection = sections[i];
-          break; // Stop checking once found
-        }
-      }
-    }
-
-    if (currentSection !== active) {
-      setActive(currentSection);
-    }
-  };
-
-  window.addEventListener("scroll", handleScroll);
-  
-  // Initial check on mount
-  handleScroll();
-
-  return () => window.removeEventListener("scroll", handleScroll);
-}, [active]);
-
-
-
-
   const scrollToSection = (id) => {
     setActive(id);
     const el = document.getElementById(id);
@@ -64,9 +23,8 @@ useEffect(() => {
         <ul className="hidden md:flex flex-row lg:gap-15 gap-5 items-end text-[18px]">
           <li className="slide-in-left duration-2 ">
             <button
-              className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "home" ? "text-[#00AEFF]" : "text-white"
-              }`}
+            className="cursor-pointer center-underline hover:text-[#00AEFF]"
+              
               onClick={() => scrollToSection("home")}
             >
               Home
@@ -74,9 +32,7 @@ useEffect(() => {
           </li>
           <li className="slide-in-left duration-3">
             <button
-              className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "about" ? "text-[#00AEFF]" : "text-white"
-              }`}
+             className="cursor-pointer center-underline hover:text-[#00AEFF]"
               onClick={() => scrollToSection("about")}
             >
               About
@@ -84,9 +40,7 @@ useEffect(() => {
           </li>
           <li className="slide-in-left duration-4">
             <button
-              className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "skills" ? "text-[#00AEFF]" : "text-white"
-              }`}
+              className="cursor-pointer center-underline hover:text-[#00AEFF]"
               onClick={() => scrollToSection("skills")}
             >
               Skills
@@ -94,9 +48,7 @@ useEffect(() => {
           </li>
           <li className="slide-in-left duration-4">
             <button
-              className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "projects" ? "text-[#00AEFF]" : "text-white"
-              }`}
+             className="cursor-pointer center-underline hover:text-[#00AEFF]"
               onClick={onProjectsClick}
             >
               Projects
@@ -104,9 +56,7 @@ useEffect(() => {
           </li>
           <li className="slide-in-left duration-4 ">
             <button
-              className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "Contact" ? "text-[#00AEFF]" : "text-white"
-              }`}
+             className="cursor-pointer center-underline hover:text-[#00AEFF]"
               onClick={() => scrollToSection("Contact")}
             >
               Contact Me
@@ -151,9 +101,7 @@ useEffect(() => {
                   transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
                 >
                   <button
-                    className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "home" ? "text-[#00AEFF]" : "text-white"
-              }`}
+                    className="cursor-pointer center-underline hover:text-[#00AEFF]"
                     onClick={() => scrollToSection("home")}
                   >
                     Home
@@ -166,9 +114,7 @@ useEffect(() => {
                   transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
                 >
                   <button
-                    className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "about" ? "text-[#00AEFF]" : "text-white"
-              }`}
+                    className="cursor-pointer center-underline hover:text-[#00AEFF]"
                     onClick={() => scrollToSection("about")}
                   >
                     About
@@ -181,9 +127,7 @@ useEffect(() => {
                   transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
                 >
                   <button
-                    className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "skills" ? "text-[#00AEFF]" : "text-white"
-              }`}
+                  className="cursor-pointer center-underline hover:text-[#00AEFF]"
                     onClick={() => scrollToSection("skills")}
                   >
                     Skills
@@ -196,9 +140,7 @@ useEffect(() => {
                   transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
                 >
                   <button
-                    className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "projects" ? "text-[#00AEFF]" : "text-white"
-              }`}
+                  className="cursor-pointer center-underline hover:text-[#00AEFF]"
                     onClick={onProjectsClick}
                   >
                     Projects
@@ -211,9 +153,7 @@ useEffect(() => {
                   transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
                 >
                   <button
-                    className={`cursor-pointer center-underline hover:text-[#00AEFF] ${
-                active === "Contact" ? "text-[#00AEFF]" : "text-white"
-              }`}
+                  className="cursor-pointer center-underline hover:text-[#00AEFF]"
                     onClick={() => scrollToSection("Contact")}
                   >
                     Contect Me
