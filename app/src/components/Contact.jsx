@@ -39,7 +39,7 @@ const Contact = () => {
   };
   return (
     <section id="Contact" className="py-16">
-      <div className="max-w-3xl mx-auto px-6 flex flex-col">
+      <div className="max-w-3xl mx-auto px-3 flex flex-col mt-5 md:mt-7">
         <motion.h1 className="text-5xl font-bold "
         initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}

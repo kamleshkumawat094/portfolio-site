@@ -16,8 +16,8 @@ const Home = () => {
   const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
   return (
-    <div className="md:h-[100vh]  flex-col flex items-center justify-evenly md:flex-row py-17 px-4  my-auto">
-      <div className="flex md:w-auto w-[60%] md:my-auto justify-center mb-5">
+    <div id="home" className="md:h-[100vh]  flex-col flex items-center justify-evenly md:flex-row py-17 px-4">
+      <div className="flex md:w-auto w-[60%] md:my-auto justify-center my-5">
         <img
           src={imgg}
           alt=""

@@ -16,7 +16,7 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skills" className="py-16 ">
-      <div className="max-w-6xl mx-auto px-3 relative inline-block">
+      <div className="max-w-6xl mx-auto px-3 mt-5 md:mt-10 relative inline-block">
         <motion.h2 className="text-5xl font-bold text-center cursor-pointer text-white"
         initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}

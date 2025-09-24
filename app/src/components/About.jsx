@@ -6,9 +6,9 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="md:h-[100vh]  flex flex-col items-center justify-evenly  md:flex-row py-16 px-4"
+      className="md:h-[100vh]  flex flex-col items-center justify-evenly  md:flex-row py-16 px-4 "
     >
-      <div className="w-full md:text-[18px] text-[17px] md:w-1/2 md:text-start text-center">
+      <div className="w-full md:text-[18px] text-[17px] md:w-1/2 md:text-start text-center md:mt-0 mt-5">
         <motion.h1
           className="text-5xl font-bold  "
           initial={{ opacity: 0, x: -200 }}
@@ -46,9 +46,10 @@ export const About = () => {
         <br />
         <motion.p
           className=""
-          initial={{ opacity: 0, y: 200 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
+           
         >
           Throughout my academic journey, I’ve worked on several projects that
           reflect my problem-solving mindset, clean code practices, and

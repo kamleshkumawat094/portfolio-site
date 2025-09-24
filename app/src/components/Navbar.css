@@ -43,7 +43,10 @@
   transition: width 0.3s ease, left 0.3s ease;
 }
 
+
+
 .center-underline:hover::after {
+  
   width: 100%;
   left: 0;
 }

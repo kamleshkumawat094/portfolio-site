@@ -22,7 +22,7 @@ function App() {
       <div className=" absolute  top-0 left-0 w-full z-50 "> 
         <Navbar  onProjectsClick={() => setIsProjectsOpen(true)} />
         </div>
-      <div className="scroll-smooth">
+      <div className="scroll-smooth container ">
         <Home />
         <About  />
         <Skills/>
