@@ -31,7 +31,7 @@ export const About = () => {
         </motion.p>
 
         <motion.p
-          className=""
+          
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -45,7 +45,7 @@ export const About = () => {
         </motion.p>
         <br />
         <motion.p
-          className=""
+          
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}

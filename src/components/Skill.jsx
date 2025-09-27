@@ -22,7 +22,7 @@ export default function Skills() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}>
           My <span className="text-[#00aeff]">Skills</span>
-          <span class=" block w-20 h-[5px] bg-[#ffffff] mt-4 mx-auto rounded"></span>
+          <span className=" block w-20 h-[5px] bg-[#ffffff] mt-4 mx-auto rounded"></span>
         </motion.h2>
 
         <motion.p className=" py-10  text-2xl "

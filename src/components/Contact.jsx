@@ -45,7 +45,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}>
           Let's <span className="text-[#00aeff]">Connect</span>
-          <span class="block w-20 h-[5px] bg-[#ffffff] mt-4 mx-auto rounded"></span>
+          <span className="block w-20 h-[5px] bg-[#ffffff] mt-4 mx-auto rounded"></span>
         </motion.h1>
         <motion.p className="text-center text-white py-5 text-2xl"
         initial={{ opacity: 0, scale: 0.1 }}
@@ -64,6 +64,8 @@ const Contact = () => {
           <input
             type="text"
             name="name"
+            id="name"
+            autoComplete="name"
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
@@ -74,6 +76,8 @@ const Contact = () => {
             type="email"
             placeholder="email"
             name="email"
+            id="email"
+            autoComplete="email"
             value={formData.email}
             onChange={handleChange}
             required
