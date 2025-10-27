@@ -105,7 +105,7 @@ const Home = () => {
         <div className="flex gap-6 py-1 text-black  md:justify-start justify-center">
           <button className="brdr border-black rounded py-2 px-6 bg-[#00aeff] font-bold slide-in-Top duratioon-6 cursor-pointer transition duration-400 ease  hover:scale-105  hover:bg-[#0398dd] ">
             <a
-              href="https://drive.google.com/file/d/1ALa81CJxrlbq9H_ZPpZq3KYcwCKvJJTA/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1CcZC7nC9irNqxf2u0lua_n-rkIEKVMVW/view?usp=drive_link"
               target="_blank"
             >
               Open CV

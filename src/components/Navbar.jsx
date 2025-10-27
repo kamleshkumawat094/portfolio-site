@@ -64,7 +64,7 @@ const Navbar = ({ onProjectsClick }) => {
           </li>
         </ul>
         <button className=" hidden md:flex items-end slide-in-left duration-5 border  rounded py-2 px-3 bg-[#ed3393] font-bold cursor-pointer">
-          <a href="https://drive.usercontent.google.com/u/0/uc?id=1ALa81CJxrlbq9H_ZPpZq3KYcwCKvJJTA&export=download">
+          <a href="https://drive.usercontent.google.com/u/0/uc?id=1CcZC7nC9irNqxf2u0lua_n-rkIEKVMVW&export=download">
             Download CV
           </a>
         </button>
@@ -86,7 +86,7 @@ const Navbar = ({ onProjectsClick }) => {
             />
 
             <motion.div
-              className=" md:hidden absolute top-8 bg-black mt-7 p-1 z-50 w-[calc(100%-2.5rem)] mx-[20px] rounded-2xl"
+              className=" md:hidden absolute top-8 bg-black mt-7 p-1 z-50   rounded-2xl"
               onClick={(e) => e.stopPropagation()}
               initial={{ opacity: 0, y: -50, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
